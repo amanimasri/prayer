@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/images/clock.png);
+    background: url(../images/clock.png);
     background-size: cover;
     border: 4px;
     /* box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.5); */
