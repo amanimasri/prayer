@@ -24,7 +24,7 @@ function getSelectedCity() {
 
 function getPrayerTimes(city) {
   let value = "";
-  axios.get(`http://api.aladhan.com/v1/timingsByCity?city=${city}&country=Syria&method=4`)
+  axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${city}&country=Syria&method=4`)
     .then(function (response) {
       // handle success
       console.log(response.data['data']['timings']);
