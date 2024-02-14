@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>مواقيت الصلاة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/colckStyle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid main-head">
+        <p class="display-3" id="city-title">دمشق</p>
+        <p id="current-date"></p>
+    </div>
+    <div class="row container justify-content-center mb-5">
+        <div class="col-md-8 col-sm-12">
+            <div>
+                <h3 class="prayer-title"> أوقات الصلاة: </h3>
+                <div>
+                    <div class="prayer-time">
+                        <p id="prayer-name"> الفجر: &nbsp;</p>
+                        <p><i class="bi bi-cloud-fill"></i></p>
+                        <p id="fjr"></p>
+                    </div>
+
+                    <div class="prayer-time">
+                        <p id="prayer-name">الشروق:</p>
+                        <p><i class="bi bi-sunrise-fill"></i></p>
+                        <p id="Sunrise"> </p>
+                    </div>
+
+                    <div class="prayer-time">
+                        <p id="prayer-name"> الظهر:</p>
+                        <p><i class="bi bi-sun-fill"></i></p>
+                        <p id="Dhuhr"></p>
+                    </div>
+
+                    <div class="prayer-time">
+                        <p id="prayer-name"> العصر:</p>
+                        <p><i class="bi bi-brightness-low-fill"></i></p>
+                        <p id="Asr"> </p>
+                    </div>
+
+                    <div class="prayer-time">
+                        <p id="prayer-name"> المغرب:</p>
+                        <p><i class="bi bi-sunset-fill"></i></p>
+                        <p id="Sunset"> </p>
+                    </div>
+
+                    <div class="prayer-time">
+                        <p id="prayer-name"> العشاء:</p>
+                        <p><i class="bi bi-moon-fill"></i></p>
+                        <p id="Isha"> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="mb-5">
+                <h3 class="prayer-title">اختر المدينة: </h3>
+                <select class="form-select" id="cities">
+                    <option value="Damascus" selected>دمشق</option>
+                    <option value="Aleppo">حلب</option>
+                    <option value="Latakia">اللاذقية</option>
+                    <option value="Homs">حمص</option>
+                    <option value="Hama">حماه</option>
+                </select>
+            </div>
+            <div class="clock-container">
+                <div class="clock">
+                    <div class="hour">
+                        <div class="hr" id="hr"> </div>
+                    </div>
+
+                    <div class="min">
+                        <div class="mn" id="mn"> </div>
+                    </div>
+
+                    <div class="sec">
+                        <div class="sc" id="sc"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/clockScript.js"></script>
+</body>
+
+</html>

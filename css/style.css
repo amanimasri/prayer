@@ -1,0 +1,46 @@
+@font-face {
+    font-family: LayaanFont;
+    src: url(/fonts/Layaan/Layaan\ Regular.ttf);
+  }
+
+ * {
+    font-family: LayaanFont;
+}
+.main-head{
+    color:#fff;
+    background-color: #7562F8;
+    /* text-align: center; */
+}
+
+.prayer-time{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    border-radius: 5em !important;
+    background-color: #cff4fc;
+    border: 1px solid #9eeaf9;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.prayer-time p {
+    margin: 5px;
+    font-size: x-large;
+}
+.prayer-title{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#cities{
+    font-size: larger;
+    background-position: left 0.75rem center;
+}
+
+#current-date{
+    font-size: larger;
+}
+
+.clock-container{
+    margin-right: 30%;
+}
